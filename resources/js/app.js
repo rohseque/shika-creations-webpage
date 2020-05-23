@@ -4,8 +4,11 @@ const navSlide = () => {
 	const burger = document.querySelector('.burger');
 	const nav = document.querySelector('.nav-list');	
 	const navList = document.querySelectorAll('.nav-list li');
+	const headertext = document.querySelector('.header-text');
+
 	//Toggle nav 
 	burger.addEventListener('click', () => {
+		headertext.classList.toggle('header-text-clear');
 		nav.classList.toggle('nav-active');
 		
 		//Animate links
