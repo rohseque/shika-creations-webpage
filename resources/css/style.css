@@ -9,7 +9,7 @@
 
 html,
 body {
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 20px;
     color: white;
@@ -34,6 +34,7 @@ h2,
 h3 {
     font-weight: 300;
     text-transform: uppercase;
+	font-family: 'Sura', sans-serif;
 }
 
 h1 {
@@ -50,12 +51,13 @@ h2 {
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 h3 {
     font-size: 110%;
     margin-bottom: 15px;
+	letter-spacing: 2px;
 }
 
 h2:after {
@@ -63,12 +65,14 @@ h2:after {
     height: 2px;
     background-color: #e67e22;
     content: " ";
-    width: 100px;
+    width: 120px;
     margin: 0 auto;
-    margin-top: 30px;
+	
 }
 
-
+section {
+	margin: 50px 0px;
+}
 
 /* ----------------------------------------------- */
 /* Header Styles*/
@@ -83,13 +87,17 @@ header {
 	color-stop(0, #FA7676),
 	color-stop(0.92, #7AFFDE)
 	);
-	background-image: -o-linear-gradient(bottom, #FA7676 0%, #7AFFDE 92%);
-	background-image: -moz-linear-gradient(bottom, #FA7676 0%, #7AFFDE 92%);
-	background-image: -webkit-linear-gradient(bottom, #FA7676 0%, #7AFFDE 92%);
-	background-image: -ms-linear-gradient(bottom, #FA7676 0%, #7AFFDE 92%);
-	background-image: linear-gradient(to bottom, #FA7676 0%, #7AFFDE 92%);
-    background-size: cover;
-    background-position: center;
+	/*background-image: -o-linear-gradient(bottom, #FA7676 0%, #7AFFDE 92%), url(img/model_with_jewellery.jpg);
+	background-image: -moz-linear-gradient(bottom, #FA7676 0%, #7AFFDE 92%), url(img/model_with_jewellery.jpg);
+	background-image: -webkit-linear-gradient(bottom, #FA7676 0%, #7AFFDE 92%), url(img/model_with_jewellery.jpg);
+	background-image: -ms-linear-gradient(bottom, #FA7676 0%, #7AFFDE 92%), url(img/model_with_jewellery.jpg);
+	background-image: linear-gradient(to bottom, #FA7676 0%, #7AFFDE 92%), url(img/model_with_jewellery.jpg);*/
+	background-image: url(img/model_with_jewellery-nobg.png);
+    background-size: contain;
+    background-position: right;
+	background-blend-mode: screen;
+	background-repeat: no-repeat;
+	background-color: #0D1019;
     height: 100vh;
     background-attachment: fixed;
 	
@@ -100,7 +108,6 @@ header {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    font-family: Montserrat, sans-serif;
     width: 100%;
     height: 10vh;
     padding-left: 2rem;
@@ -179,7 +186,8 @@ header {
     padding-left: 2rem;
 	display: flex;
 	flex-flow: row wrap;
-    font: normal 40px/50px Montserrat, sans-serif;
+    font: normal 40px/50px 'Roboto', sans-serif;
+	word-spacing: 10px;
     color: /* Need to add color*/;
 }
 .header-text-box p {
@@ -260,11 +268,24 @@ header {
 /*rgba(0,170,255,0.99);*/
 
 /* ----------------------------------------------- */
-/* Gallery Section Styles*/
+/* About Section Styles*/
 /* ----------------------------------------------- */
 
+.About {
+	color: black;
+	margin: 0 100px;
+	text-align: justify;
+	text-justify: auto;
+}
 
+.About p {
+	line-height: 180%;
+	
+}
 
+.About h3 {
+	text-align: center
+}
 
 /* ----------------------------------------------- */
 /* Footer Section Styles*/
